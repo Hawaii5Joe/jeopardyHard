@@ -1,0 +1,8 @@
+<br>
+<div *ngIf="cluesInfo" id="answerBox">
+<!-- child component - userAnswer logic/button -->
+  <p>Answer: <input type="text" [(ngModel)]="userAnswer"></p>
+  <p><button id="submitButton" (click)="checkAnswer()">Submit Your Answer!</button></p>
+  <p> {{checkUserAnswer}}</p>
+  <p>Contestant Score: {{currentScore}}</p>
+</div>
